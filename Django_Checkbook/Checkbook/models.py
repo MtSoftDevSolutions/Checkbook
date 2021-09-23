@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Account(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
@@ -15,6 +16,7 @@ class Account(models.Model):
 
 
 TransactionTypes = [('Depsoit', 'Deposit'), ('Withdrawal', 'Withdrawal')]
+
 
 class Transaction(models.Model):
     date = models.DateField()

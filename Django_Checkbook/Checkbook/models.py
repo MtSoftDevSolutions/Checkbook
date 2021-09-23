@@ -15,7 +15,7 @@ class Account(models.Model):
         return self.first_name + ' ' + self.last_name
 
 
-TransactionTypes = [('Depsoit', 'Deposit'), ('Withdrawal', 'Withdrawal')]
+TransactionTypes = [('Deposit', 'Deposit'), ('Withdrawal', 'Withdrawal')]
 
 
 class Transaction(models.Model):
